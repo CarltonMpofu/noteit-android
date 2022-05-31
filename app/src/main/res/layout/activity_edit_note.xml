@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    android:id="@+id/myBackground"
+    tools:context=".EditNote">
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/note_blue"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:hint="enter title here"
+        android:inputType="textPersonName"
+
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/primary_text"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/etNote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/colors"
+        android:layout_below="@id/etTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/note_blue"
+        android:ems="10"
+        android:fontFamily="@font/alata"
+        android:gravity="start"
+        android:hint="enter note here"
+        android:inputType="textLongMessage|textMultiLine"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="viewStart"
+        android:textColor="@color/primary_text"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnSave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="show colors">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/note_blue"
+                    android:contentDescription="Change color to acqua blue"
+                    android:focusable="true"
+                    android:onClick="colorToBlue" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/note_pink"
+                    android:clickable="true"
+                    android:contentDescription="Change note color to pink"
+                    android:focusable="true"
+                    android:onClick="colorToPink" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/note_yellow"
+                    android:clickable="true"
+                    android:contentDescription="Change color to yellow"
+                    android:focusable="true"
+                    android:onClick="colorToYellow" />
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/note_deep_purple"
+                    android:clickable="true"
+                    android:contentDescription="Change color to deep purple"
+                    android:focusable="true"
+                    android:onClick="colorToDeepPurple" />
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/note_green"
+                    android:clickable="true"
+                    android:contentDescription="change color to green"
+                    android:focusable="true"
+                    android:onClick="colorToGreen" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/note_deep_orange"
+                    android:clickable="true"
+                    android:contentDescription="change color to orange"
+                    android:focusable="true"
+                    android:onClick="colorToDeepOrange" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/note_blue_grey"
+                    android:clickable="true"
+                    android:contentDescription="chnage color to blue grey"
+                    android:focusable="true"
+                    android:onClick="colorToBlueGrey" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/alata"
+        android:text="Save"
+        android:textColor="@color/primary_text"
+        android:textSize="27sp" />
+</RelativeLayout>
