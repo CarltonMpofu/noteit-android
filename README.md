@@ -10,12 +10,8 @@ A simple app for taking notes.
 
 ## Screenshots
 
-![](screenshots/screenshot0.png)
+![](screenshots/screenshot0.png) ![](screenshots/screenshot2.png)
 
-![](screenshots/screenshot2.png)
-
-![](screenshots/screenshot3.png)
-
-![](screenshots/screenshot4.png)
+![](screenshots/screenshot3.png) ![](screenshots/screenshot4.png)
 
 ![](screenshots/screenshot5.png)
