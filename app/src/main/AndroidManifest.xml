@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.noteit">
+    package="com.clbmdev.noteit">
 
     <application
         android:allowBackup="true"
@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoteIt">
         <activity
-            android:name=".EditNote"
+            android:name="com.clbmdev.noteit.EditNote"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.clbmdev.noteit.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

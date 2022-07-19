@@ -1,4 +1,4 @@
-package com.example.noteit;
+package com.clbmdev.noteit;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;

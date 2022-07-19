@@ -1,4 +1,4 @@
-package com.example.noteit;
+package com.clbmdev.noteit;
 
 import org.junit.Test;
 

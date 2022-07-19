@@ -7,7 +7,7 @@ android {
     buildToolsVersion '33.0.0 rc1'
 
     defaultConfig {
-        applicationId "com.example.noteit"
+        applicationId "com.clbmdev.noteit"
         minSdk 21
         targetSdk 31
         versionCode 1

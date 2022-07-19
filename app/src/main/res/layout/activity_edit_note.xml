@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/primary_light"
     android:id="@+id/myBackground"
-    tools:context=".EditNote">
+    tools:context="com.clbmdev.noteit.EditNote">
 
     <EditText
         android:id="@+id/etTitle"
