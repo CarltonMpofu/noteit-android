@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_margin="8dp"
+        android:contentDescription="@string/background_color_of_the_note"
         card_view:cardBackgroundColor="#D3D3D3"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="5dp"
@@ -21,6 +22,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:fontFamily="@font/alata"
+            android:hint="@string/the_note"
             android:text="TextView"
             android:textColor="@color/primary_text"
             android:textSize="22sp" />
